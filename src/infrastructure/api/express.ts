@@ -6,9 +6,13 @@ import ProductAdmModel from "../../modules/product-adm/repository/product-adm.mo
 import TransactionModel from "../../modules/payment/repository/transaction.model";
 import InvoiceModel from "../../modules/invoice/repository/invoice.model";
 import InvoiceItemModel from "../../modules/invoice/repository/invoice-item.model";
+import { clientRoute } from "./routes/client.route";
 
 export const app: Express = express();
+app.get("/health", (req, res) => res.send("OK"));
+
 app.use(express.json());
+app.use("/clients", clientRoute);
 
 export let sequelize: Sequelize;
 
