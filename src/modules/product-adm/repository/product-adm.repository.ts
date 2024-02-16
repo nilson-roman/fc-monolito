@@ -1,7 +1,7 @@
 import Id from "../../@shared/domain/value-object/id.value-object";
 import Product from "../domain/product.entity";
 import ProductGateway from "../gateway/product.gateway";
-import { ProductAdmModel } from "./product-adm.model";
+import ProductAdmModel from "./product-adm.model";
 
 export default class ProductRepository implements ProductGateway {
   async add(product: Product): Promise<void> {

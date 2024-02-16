@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize-typescript";
 import ProductAdmFacadeFactory from "../factory/facade.factory";
-import { ProductAdmModel } from "../repository/product-adm.model";
+import ProductAdmModel from "../repository/product-adm.model";
 
 describe("ProductAdmFacade test", () => {
   let sequelize: Sequelize;

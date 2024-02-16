@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize-typescript";
 import Id from "../../@shared/domain/value-object/id.value-object";
 import Product from "../domain/product.entity";
-import { ProductAdmModel } from "./product-adm.model";
+import ProductAdmModel from "./product-adm.model";
 import ProductRepository from "./product-adm.repository";
 
 describe("ProductRepository test", () => {
