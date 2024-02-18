@@ -8,23 +8,23 @@ import { Column, Model, PrimaryKey, Table } from "sequelize-typescript";
 export default class ProductAdmModel extends Model {
   @PrimaryKey
   @Column({ allowNull: false })
-  id: string;
+  declare id: string;
 
   @Column({ allowNull: false })
-  name: string;
+  declare name: string;
 
   @Column({ allowNull: false })
-  description: string;
+  declare description: string;
 
   @Column({ allowNull: true })
-  purchasePrice: number;
+  declare purchasePrice: number;
 
   @Column({ allowNull: true })
-  stock: number;
+  declare stock: number;
 
   @Column({ allowNull: true })
-  createdAt: Date;
+  declare createdAt: Date;
 
   @Column({ allowNull: true })
-  updatedAt: Date;
+  declare updatedAt: Date;
 }
