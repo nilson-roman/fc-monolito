@@ -18,8 +18,8 @@ app.use(express.json());
 app.use("/clients", clientRoute);
 app.use("/products", productRoute);
 
-export let sequelize: Sequelize;
-export let migration: Umzug<any>;
+let sequelize: Sequelize;
+let migration: Umzug<any>;
 
 async function setupDb() {
     sequelize = new Sequelize({
