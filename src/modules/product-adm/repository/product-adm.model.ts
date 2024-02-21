@@ -20,6 +20,9 @@ export default class ProductAdmModel extends Model {
   declare purchasePrice: number;
 
   @Column({ allowNull: true })
+  declare salesPrice: number;
+
+  @Column({ allowNull: true })
   declare stock: number;
 
   @Column({ allowNull: true })
