@@ -18,6 +18,7 @@ clientRoute.post("/", async (req: Request, res: Response) => {
         );
 
         const clientDto = {
+            id: req?.body?.id,
             name: req.body.name,
             email: req.body.email,
             document: req.body.document,
