@@ -7,8 +7,8 @@ type ProductProps = {
   name: string;
   description: string;
   purchasePrice: number;
-  salesPrice: number;
   stock: number;
+  salesPrice?: number;
   createdAt?: Date;
   updatedAt?: Date;
 };
