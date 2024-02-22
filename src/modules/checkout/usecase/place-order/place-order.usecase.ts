@@ -90,7 +90,7 @@ export default class PlaceOrderUseCase implements UseCaseInterface {
     const invoiceId = payment.status === "approved" ? invoice.id : null;
 
     order.defineInvoice(invoiceId);
-    this._repository.addOrder(order);
+    await this._repository.addOrder(order);
 
     return {
       id: order.id.id,
