@@ -96,6 +96,7 @@ export default class PlaceOrderUseCase implements UseCaseInterface {
       id: order.id.id,
       invoiceId,
       total: order.total,
+      clientId: order.client.id.id,
       products: order.products.map((p) => {
         return {
           productId: p.id.id,
